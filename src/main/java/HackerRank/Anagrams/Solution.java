@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        //Not my code
+        // Not my code
         Scanner scan = new Scanner(System.in);
         String a = scan.next();
         String b = scan.next();
         scan.close();
         boolean ret = isAnagram(a, b);
         System.out.println((ret) ? "Anagrams" : "Not Anagrams");
-        //end Not my code
+        // end Not my code
     }
 
     static boolean isAnagram(String a, String b) {
