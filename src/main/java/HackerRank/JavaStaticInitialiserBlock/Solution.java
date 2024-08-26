@@ -6,7 +6,7 @@ public class Solution {
     static int B;
     static int H;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // technically supposed to handle all of this but meh!
         Scanner scanner = new Scanner(System.in);
         B = scanner.nextInt();
@@ -15,6 +15,7 @@ public class Solution {
         try {
             System.out.println(Solution.calculateArea(B, H));
         } catch (Exception e) {
+            //The challenge wanted the whole throwable argument
             System.out.println(e);
         }
         scanner.close();
