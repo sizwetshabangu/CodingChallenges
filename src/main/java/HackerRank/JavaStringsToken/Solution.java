@@ -5,6 +5,25 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Solution {
+    /**
+     * Sample Input
+     *
+     * He is a very very good boy, isn't he?
+     *
+     * Sample Output
+     *
+     * 10
+     * He
+     * is
+     * a
+     * very
+     * very
+     * good
+     * boy
+     * isn
+     * t
+     * he
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String senctance = scanner.nextLine();
@@ -36,22 +55,3 @@ public class Solution {
     }
 }
 
-/**
- * Sample Input
- * 
- * He is a very very good boy, isn't he?
- * 
- * Sample Output
- * 
- * 10
- * He
- * is
- * a
- * very
- * very
- * good
- * boy
- * isn
- * t
- * he
- */
