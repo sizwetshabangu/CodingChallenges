@@ -7,11 +7,8 @@ import java.util.Scanner;
 public class Solution {
     /**
      * Sample Input
-     *
-     * He is a very very good boy, isn't he?
-     *
+     * He is a very, very good boy, isn't he?
      * Sample Output
-     *
      * 10
      * He
      * is

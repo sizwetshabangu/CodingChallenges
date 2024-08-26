@@ -29,7 +29,7 @@ class SolutionTest {
 
     @Test
     @DisplayName("Test calculate area when one is positive")
-    void calculateArea_fail_one_negative() throws Exception {
+    void calculateArea_fail_one_negative() {
         B=3;
         H=-1;
         Assertions.assertThrows(Exception.class, ()->Solution.calculateArea(B,H));
@@ -37,7 +37,7 @@ class SolutionTest {
 
     @Test
     @DisplayName("Test calculate area when both are negative")
-    void calculateArea_fail_both_negative() throws Exception {
+    void calculateArea_fail_both_negative() {
         B=-3;
         H=-1;
         Assertions.assertThrows(Exception.class, ()->Solution.calculateArea(B,H));
