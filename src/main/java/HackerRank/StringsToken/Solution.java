@@ -1,4 +1,4 @@
-package HackerRank.JavaStringsToken;
+package HackerRank.StringsToken;
 
 import java.util.ArrayList;
 import java.util.List;
