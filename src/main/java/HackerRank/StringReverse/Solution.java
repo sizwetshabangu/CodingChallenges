@@ -8,7 +8,7 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         String A = scanner.next();
         /* Enter your code here. Print output to STDOUT. */
-        if (Solution.isPalindrome(A)) {
+        if (Solution.isPalindrome2(A)) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
@@ -23,5 +23,14 @@ public class Solution {
         }
         String otherWord = new String(characterArray);
         return otherWord.equals(word);
+    }
+
+    public static boolean isPalindrome2(String word) {
+        for (int i = 0; i < word.length() / 2; i++) {
+            if (word.charAt(i) != word.charAt(word.length() - 1 - i)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
