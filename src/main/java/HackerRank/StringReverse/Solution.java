@@ -17,11 +17,11 @@ public class Solution {
     }
 
     public static boolean isPalindrome(String word) {
-        char[] characterAray = new char[word.length()];
+        char[] characterArray = new char[word.length()];
         for (int x = word.length() - 1; x >= 0; x--) {
-            characterAray[word.length() - 1 - x] = word.charAt(x);
+            characterArray[word.length() - 1 - x] = word.charAt(x);
         }
-        String otherWord = new String(characterAray);
+        String otherWord = new String(characterArray);
         return otherWord.equals(word);
     }
 }
