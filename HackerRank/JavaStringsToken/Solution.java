@@ -20,8 +20,9 @@ public class Solution {
                     senctance.charAt(counter) == ' ' ||
                     senctance.charAt(counter) == '\'') {
                 totalNumberOfTokens++;
-                // TODO: fix me
-                words.add(stringBuilder.toString());
+                if (!stringBuilder.isEmpty()) {
+                    words.add(stringBuilder.toString());
+                }
                 stringBuilder.setLength(0);
             } else {
                 stringBuilder.append(senctance.charAt(counter));
