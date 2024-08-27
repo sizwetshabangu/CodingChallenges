@@ -23,25 +23,25 @@ public class Solution {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String senctance = scanner.nextLine();
+        String sentence = scanner.nextLine();
         // Write your code here.
         List<String> words = new ArrayList<>();
         StringBuilder stringBuilder = new StringBuilder();
         int totalNumberOfTokens = 0;
-        for (int counter = 0; counter < senctance.length(); counter++) {
-            if (senctance.charAt(counter) == '?' ||
-                    senctance.charAt(counter) == '!' ||
-                    senctance.charAt(counter) == ',' ||
-                    senctance.charAt(counter) == '.' ||
-                    senctance.charAt(counter) == ' ' ||
-                    senctance.charAt(counter) == '\'') {
+        for (int counter = 0; counter < sentence.length(); counter++) {
+            if (sentence.charAt(counter) == '?' ||
+                    sentence.charAt(counter) == '!' ||
+                    sentence.charAt(counter) == ',' ||
+                    sentence.charAt(counter) == '.' ||
+                    sentence.charAt(counter) == ' ' ||
+                    sentence.charAt(counter) == '\'') {
                 totalNumberOfTokens++;
                 if (!stringBuilder.isEmpty()) {
                     words.add(stringBuilder.toString());
                 }
                 stringBuilder.setLength(0);
             } else {
-                stringBuilder.append(senctance.charAt(counter));
+                stringBuilder.append(sentence.charAt(counter));
             }
         }
         System.out.println(totalNumberOfTokens);
